@@ -3,9 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Casa de Abraão</title>
+	<title>Instituto Casa de Abraão</title>
 
      <link rel="stylesheet" href="style_index.css">
+
+     <link rel="icon" type="image/png" sizes="32x32" href="assets/logo_casa_de_abraao-semfundo.png">
+
 
 
 	<style>
@@ -38,7 +41,7 @@
 		   <div class="segundo_bloco"> 
 			 <h3> Problemas com Álcool e outras drogas? Podemos te ajudar.</h3>
 
-			 <div class="container-links">
+			 <div class="container-links" id="ancora">
             <a href="https://api.whatsapp.com/send?phone=5585986213258&text=Ol%C3%A1,%20Gostaria%20de%20saber%20sobre%20atendimentos%20psicol%C3%B3gico." class="btn-link" target="_blank">
               Doe ou Seja Voluntário
             </a>
@@ -245,6 +248,41 @@
         <div class="sexto_bloco">
         <P> Foi movida pelo ideal de estender a mão a quem mais precisa e de não fechar os olhos para a dor da dependência que a Casa de Abraão foi criada no distrito de Timbu. A organização trabalha incansavelmente para salvar vidas, orientar e dar suporte emocional às famílias afetadas, diminuir o preconceito social e promover uma real transformação social através do amor e da espiritualidade.
             </P>  <br> <br>  
+             
+              
+<a href="#" data-target="#ancora" class="botao-ancora">Apoiar esta Causa</a>
+
+<script>
+  
+  if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+  }
+
+  
+  document.querySelectorAll('a[data-target]').forEach(botao => {
+    botao.addEventListener('click', function(evento) {
+      evento.preventDefault(); 
+      
+      const idDestino = this.getAttribute('data-target');
+      const elementoDestino = document.querySelector(idDestino);
+      
+      if (elementoDestino) {
+       
+        const topoElemento = elementoDestino.getBoundingClientRect().top + window.scrollY;
+        
+        
+        const recuoTopo = 100; 
+
+        window.scrollTo({
+          top: topoElemento - recuoTopo,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+</script>
+
 
             <div class="wave-container4">
         <svg viewBox="0 0 1200 120" preserveAspectRatio="none">

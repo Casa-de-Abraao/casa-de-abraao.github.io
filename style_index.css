@@ -463,6 +463,49 @@
     fill:#ffffff; 
     }
      
+      html {
+  scroll-behavior: smooth;
+}
+
+    #ancora {
+    scroll-margin-top: 150px; 
+  }
+
+    
+  .botao-ancora {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #19a032; 
+    color: #ffffff;            
+    text-decoration: none;     
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 6px;        
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease; 
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+  .botao-ancora:hover {
+    background-color: #0f601d; 
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+  }
+
+  
+  .botao-ancora:active {
+    transform: translateY(0); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+
+
 
 
     footer{ background-color: #ffffff; color:rgb(15, 82, 107); text-align: center; margin-top: 2rem; margin-bottom: 2rem;
