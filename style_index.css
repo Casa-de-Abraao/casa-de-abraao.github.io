@@ -64,7 +64,7 @@
     
     .wave-container svg path {
     
-    fill: #0099ff; 
+    fill: rgb(15, 82, 107); 
     }
 
 
@@ -74,14 +74,15 @@
 	/* main */
     
 
-	main{ background-color:#0099ff ;}
+	main{ background-color:rgb(15, 82, 107);}
 
 	.descrição_inicial{ display: flex;
     flex-direction: row; 
     align-items: center;   
     justify-content:baseline;
     text-align: center; 
-	width: 40%;   
+	width: 40%;
+  color:rgb(245, 246, 247)   
     
     }
 
@@ -109,7 +110,7 @@
 
 	.segundo_bloco{ }
 
-	.segundo_bloco h3 {text-align: center; font-size: large;}
+	.segundo_bloco h3 {text-align: center; font-size: large; color: rgb(245, 246, 247);}
 
 	.container-links {
     display: flex;
@@ -368,15 +369,15 @@
     
     .wave-container3 svg path {
     
-    fill:#0099ff; 
+    fill:rgb(15, 82, 107); 
     }
 
     
 
     /* quarto bloco */
+    /*#0099ff*/
 
-
-    .quarto_bloco{ background-color: #0099ff; color: rgb(0 0 0) ;}
+    .quarto_bloco{ background-color: rgb(15, 82, 107); color: rgb(245, 246, 247);}
 
     .quarto_bloco img{ width: 250px; height: 250px; border-radius: 100%;}
 
@@ -388,7 +389,7 @@
     /* quinto bloco */
 
 
-    .quinto_bloco{background-color: #0099ff; color: rgb(0 0 0) ;
+    .quinto_bloco{background-color: rgb(15, 82, 107); color: rgb(245, 246, 247) ;
     display: flex; flex-direction: row; margin-top: 2rem;
     }
 
