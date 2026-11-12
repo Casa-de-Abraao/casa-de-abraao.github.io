@@ -1,0 +1,440 @@
+
+
+            /* importação das fontes  */
+
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+            /* vamos lá */
+
+        *{  margin: 0; 
+        padding: 0;  
+        border: 0;   
+        box-sizing: border-box;  }
+
+
+     
+
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Fonte padrão para  subtitulos, textos e parágrafos */
+    
+    background-color: #fdfbf7;
+}
+
+ 
+
+h1, h2, .titulo-destaque {
+    font-family: 'Playfair Display', serif; /* Fonte estilizada para títulos */
+    font-weight: 900;
+}
+
+
+
+ /* #region  aqui é o Header */
+
+
+
+.cabecalho-principal {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    padding: 20px 5%;               
+    background-color: #fdfbf7;     
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;                     
+}
+
+.logo-container img {
+    height: 55px;                 
+    width: auto;
+}
+
+.logo-container h1 {
+    font-family: 'Playfair Display', sans-serif; 
+    font-size: 1.1rem;
+    line-height: 1.2;
+    color: #0f526b;                    
+    font-weight: 700;
+}
+
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;                     
+}
+
+
+.lista-menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;  }                    
+
+.lista-menu li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+
+.lista-menu li a:hover,
+.lista-menu li a.ativo {
+    color: #0f526b;                 
+    font-weight: 600;
+}
+
+
+.btn-acao {
+    display: inline-block;
+    background-color: #0f526b;      
+    color: #ffffff;                 
+    padding: 10px 24px;
+    border-radius: 50px;            
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-acao:hover {
+    background-color: #0a3c4f;      
+    transform: translateY(-2px);    
+}
+
+
+ /* #endregion */
+
+ /* #region bloco 1 do main */
+ .container {
+    max-width: 1200px; 
+    margin: 0 auto;    
+    padding: 0 20px;   
+    width: 100%;
+}
+
+/* --- Seção Hero --- */
+.hero-section {
+    width: 100%;
+    min-height: 80vh; 
+    display: flex;
+    align-items: center; 
+    
+    
+    
+    background-image: 
+        linear-gradient(to right, rgba(253, 251, 247, 1) 30%, rgba(253, 251, 247, 0) 70%), 
+        url('./assets/banner.jpg');
+
+    
+     /* background-size: cover; */   
+    background-position: 130% center ; 
+    background-repeat: no-repeat;
+    padding: 60px 0; 
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+
+.hero-conteudo {
+    flex: 0 0 50%; 
+    max-width: 550px; 
+}
+
+.hero-conteudo h1 {
+    font-family: 'Playfair Display', serif; 
+    font-size: 3.5rem;    
+    line-height: 1.1;     
+    color: #0f526b;       
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.hero-conteudo h1 span {
+    font-style: italic;   
+    font-weight: 600;     
+}
+
+.hero-conteudo p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;          
+    margin-bottom: 40px;  
+    max-width: 480px;     
+}
+
+
+.hero-imagem-espaco {
+    flex: 0 0 45%; 
+}
+
+
+.hero-botoes {
+    display: flex;
+    gap: 20px;            
+    align-items: center;
+}
+
+
+.btn-conheca, .btn-acolhimento {
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 50px;  
+    transition: all 0.3s ease;
+    height: 50px;         
+    padding: 0 30px;      
+}
+
+
+.btn-conheca {
+    background-color: #0f526b; 
+    color: #ffffff;
+    border: 2px solid #0f526b;
+}
+
+.btn-conheca:hover {
+    background-color: #0a3c4f; 
+    border-color: #0a3c4f;
+    transform: translateY(-2px);
+}
+
+.btn-conheca .seta {
+    margin-left: 10px;    
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.btn-conheca:hover .seta {
+    transform: translateX(5px); 
+}
+
+
+.btn-acolhimento {
+    background-color: transparent;
+    color: #0f526b;
+    border: 1.5px solid #0f526b; 
+}
+
+.btn-acolhimento:hover {
+    background-color: rgba(15, 82, 107, 0.05); 
+    transform: translateY(-2px);
+}
+
+ /* #endregion  */
+
+ /* #region bloco 2 do main */
+
+    /* --- Seção Nosso Propósito --- */
+.proposito-section {
+    width: 100%;
+    padding: 80px 0;
+    background-color: #fdfbf7; 
+}
+
+.proposito-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.proposito-slogan {
+    flex: 0 0 20%;
+    margin-left: -70px
+}
+
+.proposito-slogan p {
+    font-family: 'Playfair Display', serif; 
+    font-style: italic;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #8c9c94; 
+    font-weight: 500;
+}
+
+
+.proposito-conteudo {
+    flex: 0 0 45%;
+    max-width: 500px;
+    margin-left: 95px;
+    margin-right: 80px;
+}
+
+.subtitulo-tag {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #0f526b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.linha-detalhe {
+    width: 35px;
+    height: 2px;
+    background-color: #0f526b;
+    margin: 8px 0 20px 0;
+}
+
+.proposito-conteudo h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    line-height: 1.25;
+    color: #0f526b;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.proposito-conteudo p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555555;
+}
+
+
+.proposito-imagem-wrapper {
+    flex: 0 0 30%;
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.proposito-img {
+    width: 100%;
+    max-width: 320px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 20px; 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1; 
+}
+
+
+
+
+ /* #endregion  */
+
+
+ /* #region bloco 3 do main */
+
+ /* --- Seção Como Atuamos --- */
+.como-atuamos-section {
+    width: 100%;
+    background-color: #0f526b; 
+    padding: 80px 0;
+}
+
+.atuamos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.atuamos-titulo-grupo {
+    margin-bottom: 40px;
+}
+
+.atuamos-titulo-grupo h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: #ffffff; 
+    font-weight: 700;
+}
+
+.linha-detalhe-branco {
+    width: 40px;
+    height: 2px;
+    background-color: #ffffff;
+    margin-top: 8px;
+}
+
+
+.cards-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+
+.card-item {
+    background-color: #fdfbf7; 
+    border-radius: 16px;       
+    padding: 30px 25px;
+    flex: 1;                   
+    min-width: 250px;          
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+/* esse seria um hover pro cards, n sei se colocar, com ele ficar parencendo um botão ai fica meio esquisito, pq n é botão, ent deixei sem por enquanto, vai que sla
+/* 
+.card-item:hover {
+    transform: translateY(-5px); 
+}
+    */
+
+.card-icone {
+    width: 50px;
+    height: 50px;
+    background-color: #f0ede6; 
+    border-radius: 50%;       
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card-icone i {
+    font-size: 1.2rem;
+    color: #0f526b;           
+}
+
+
+.card-item h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 12px;
+}
+
+.card-item p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #555555;
+}
+
+ /* #endregion  */
+
+/* #region bloco 4 do main */
+    /*parei aqui, vou continuar apartir daqui */
+
+ /* #endregion  */
