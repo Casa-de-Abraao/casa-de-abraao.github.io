@@ -1,0 +1,223 @@
+/* Casa de Abraão — layout inspirado na referência enviada */
+:root {
+  --cream: #f7f4ed;
+  --ink: #172f2d;
+  --teal: #075b5b;
+  --teal-dark: #064d50;
+  --muted: #5f6863;
+  --white: #fff;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--cream);
+  color: #172321;
+  font-family: "DM Sans", Arial, sans-serif;
+}
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+.section-wrap { width: min(1120px, calc(100% - 72px)); margin-inline: auto; }
+
+.projects { padding-top: 42px; padding-bottom: 34px; text-align: center; }
+.section-heading { text-align: left; margin-bottom: 26px; }
+.eyebrow {
+  display: block;
+  width: 34px;
+  height: 3px;
+  overflow: hidden;
+  margin-bottom: 8px;
+  background: var(--teal);
+  color: transparent;
+  border-radius: 5px;
+}
+.section-heading h2 { margin: 0; font-size: 27px; line-height: 1.15; font-weight: 700; }
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  text-align: left;
+}
+.project-card {
+  overflow: hidden;
+  background: #fff;
+  border-radius: 13px;
+  box-shadow: 0 5px 18px rgba(34, 46, 39, .07);
+}
+.project-card img { width: 100%; height: 158px; object-fit: cover; }
+.project-card h3 { min-height: 66px; margin: 0; padding: 13px 14px 15px; font-size: 16px; line-height: 1.18; }
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  min-height: 43px;
+  padding: 0 24px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: transform .2s ease, background .2s ease;
+}
+.button:hover { transform: translateY(-2px); }
+.button-dark { margin-top: 24px; background: var(--teal); color: white; }
+.button-dark:hover { background: var(--teal-dark); }
+.button span { font-size: 18px; line-height: 0; }
+
+.testimonial {
+  position: relative;
+  min-height: 300px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: #143b36;
+  color: white;
+}
+.testimonial::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(5, 38, 35, .86) 0%, rgba(5, 38, 35, .48) 53%, rgba(5, 38, 35, .05) 100%);
+  z-index: 1;
+}
+.testimonial > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 42%;
+}
+.testimonial-content {
+  position: relative;
+  z-index: 2;
+  width: min(1120px, calc(100% - 72px));
+  margin: 0 auto;
+}
+.testimonial blockquote {
+  margin: 0;
+  max-width: 580px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(27px, 3.3vw, 43px);
+  line-height: 1.15;
+}
+
+.help { padding-top: 42px; padding-bottom: 40px; }
+.help .section-heading { margin-bottom: 25px; }
+.help-intro h3, .support-copy h2 {
+  margin: 0 0 10px;
+  color: var(--ink);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(25px, 2.8vw, 34px);
+  line-height: 1.12;
+}
+.help-intro p, .support-copy p { margin: 0; color: #394542; font-size: 14px; line-height: 1.5; }
+.help-options {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin: 32px 0 0;
+  text-align: center;
+}
+.help-option { display: flex; flex-direction: column; align-items: center; gap: 11px; }
+.help-icon {
+  display: grid;
+  place-items: center;
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--ink);
+  font-size: 34px;
+  box-shadow: 0 3px 14px rgba(34, 46, 39, .04);
+}
+.help-option h4 { margin: 0; font-size: 13px; line-height: 1.25; }
+
+.support {
+  display: grid;
+  grid-template-columns: 38% 62%;
+  align-items: center;
+  min-height: 300px;
+  padding: 0 max(36px, calc((100% - 1120px) / 2));
+  gap: clamp(35px, 6vw, 85px);
+}
+.support > img { width: 100%; height: 255px; object-fit: cover; border-radius: 3px; }
+.support-copy h2 { font-size: clamp(25px, 2.7vw, 33px); }
+.support-copy .button { margin-top: 19px; }
+
+.footer {
+  display: grid;
+  grid-template-columns: 1.5fr .8fr 1.1fr;
+  gap: 55px;
+  padding: 48px max(36px, calc((100% - 1120px) / 2));
+  background: #075357;
+  color: white;
+}
+.brand-lockup { display: flex; align-items: center; gap: 14px; }
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border: 2px solid white;
+  border-radius: 50% 50% 42% 42%;
+  font-family: Georgia, serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+.brand-mark span { font-size: 19px; }
+.brand-name { font-family: "Playfair Display", Georgia, serif; font-size: 22px; line-height: 1.05; }
+.footer-brand p { margin: 22px 0 0; color: rgba(255,255,255,.86); font-size: 13px; line-height: 1.55; }
+.footer h3 { margin: 0 0 15px; font-size: 14px; }
+.footer-nav, .footer-contact { display: flex; flex-direction: column; align-items: flex-start; }
+.footer-nav a, .footer-contact a, .footer-contact p {
+  margin: 0 0 9px;
+  color: rgba(255,255,255,.9);
+  font-size: 13px;
+}
+.social-links { display: flex; gap: 12px; margin-top: 9px; }
+.social-links a {
+  display: grid;
+  place-items: center;
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  background: white;
+  color: var(--teal);
+  font-size: 19px;
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .section-wrap { width: min(100% - 36px, 560px); }
+  .projects { padding-top: 30px; }
+  .section-heading h2 { font-size: 23px; }
+  .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; }
+  .project-card img { height: 130px; }
+  .project-card h3 { min-height: 57px; padding: 11px; font-size: 14px; }
+  .testimonial { min-height: 245px; }
+  .testimonial-content { width: calc(100% - 40px); }
+  .testimonial blockquote { font-size: clamp(24px, 6vw, 34px); }
+  .help { padding-top: 32px; }
+  .help-intro h3 { font-size: 26px; }
+  .help-options { grid-template-columns: repeat(3, 1fr); row-gap: 25px; }
+  .help-icon { width: 68px; height: 68px; font-size: 29px; }
+  .help-option h4 { font-size: 12px; }
+  .support {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 0 18px 34px;
+  }
+  .support > img { height: 220px; }
+  .support-copy { padding: 0 5px; }
+  .desktop-only { display: none; }
+  .footer { grid-template-columns: 1fr 1fr; gap: 35px 22px; padding: 36px 22px; }
+  .footer-brand { grid-column: 1 / -1; }
+}
+
+@media (max-width: 390px) {
+  .project-card img { height: 110px; }
+  .help-options { grid-template-columns: repeat(2, 1fr); }
+  .footer { grid-template-columns: 1fr; }
+  .footer-brand { grid-column: auto; }
+}

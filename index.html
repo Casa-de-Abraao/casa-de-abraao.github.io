@@ -1,306 +1,125 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Instituto Casa de Abraão</title>
-
-     <link rel="stylesheet" href="style_index.css">
-
-     <link rel="icon" type="image/png" sizes="32x32" href="assets/logo_casa_de_abraao-semfundo.png">
-
-
-
-	<style>
-
-		/* coloquei o css separado em outra pagina, pq tava muito longo */
-
-
-	</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Casa de Abraão — acolhendo pessoas, construindo possibilidades e transformando histórias.">
+  <title>Casa de Abraão | Acolhendo pessoas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header>
-			<div class="logo-titulo"> <img src="./assets/logo_casa_de_abraao.png"  alt="Logo Casa de Abraão"> <h1> Casa de Abraão</h1> </div>
+  <main>
+    <section class="projects section-wrap" id="projetos">
+      <div class="section-heading">
+        <span class="eyebrow">Nossas iniciativas</span>
+        <h2>Projetos e atividades</h2>
+      </div>
 
-			<div class="wave-container">
-        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M0,0 C150,90 350,-40 500,40 C650,120 900,10 1200,40 L1200,120 L0,120 Z"></path>
-        </svg>
+      <div class="project-grid">
+        <article class="project-card">
+          <img src="images/esporte.jpg" alt="Pessoas participando de uma atividade esportiva">
+          <h3>Esporte<br>e cultura</h3>
+        </article>
+        <article class="project-card">
+          <img src="images/horta.jpg" alt="Mãos cuidando de uma muda na horta">
+          <h3>Horta<br>comunitária</h3>
+        </article>
+        <article class="project-card">
+          <img src="images/palestra.jpg" alt="Grupo participando de uma conversa">
+          <h3>Palestras<br>e prevenção</h3>
+        </article>
+        <article class="project-card">
+          <img src="images/barbearia.jpg" alt="Atendimento em uma barbearia">
+          <h3>Barbearia<br>e convivência</h3>
+        </article>
+      </div>
+      <a class="button button-dark" href="#contato">Ver todos os projetos <span>→</span></a>
+    </section>
+
+    <section class="testimonial" aria-label="Depoimento">
+      <div class="testimonial-content">
+        <blockquote>“Aqui eu encontrei<br>apoio, respeito e uma nova<br>chance de recomeçar.”</blockquote>
+      </div>
+      <img src="images/depoimento.jpg" alt="Homem olhando para o horizonte">
+    </section>
+
+    <section class="help section-wrap" id="como-ajudar">
+      <div class="section-heading">
+        <span class="eyebrow">Faça parte</span>
+        <h2>Como ajudar</h2>
+      </div>
+      <div class="help-intro">
+        <h3>Toda transformação também<br>precisa de quem acredita nela.</h3>
+        <p>Existem diferentes formas de contribuir e ajudar a manter<br class="desktop-only"> a Casa de Abraão funcionando.</p>
+      </div>
+
+      <div class="help-options">
+        <article class="help-option">
+          <div class="help-icon" aria-hidden="true">▤</div>
+          <h4>Doações de<br>alimentos</h4>
+        </article>
+        <article class="help-option">
+          <div class="help-icon" aria-hidden="true">♟</div>
+          <h4>Roupas, calçados<br>e utensílios</h4>
+        </article>
+        <article class="help-option">
+          <div class="help-icon" aria-hidden="true">♧</div>
+          <h4>Serviço<br>voluntário</h4>
+        </article>
+        <article class="help-option">
+          <div class="help-icon" aria-hidden="true">♡</div>
+          <h4>Parcerias</h4>
+        </article>
+        <article class="help-option">
+          <div class="help-icon" aria-hidden="true">♥</div>
+          <h4>Doações<br>financeiras</h4>
+        </article>
+      </div>
+      <a class="button button-dark" href="#contato">Quero contribuir <span>→</span></a>
+    </section>
+
+    <section class="support">
+      <img src="images/apoio.jpg" alt="Duas pessoas segurando as mãos em gesto de apoio">
+      <div class="support-copy">
+        <h2>Pedir ajuda também<br>é uma forma de começar.</h2>
+        <p>Se você ou alguém da sua família está enfrentando<br class="desktop-only"> problemas relacionados ao uso de álcool ou outras drogas,<br class="desktop-only"> a Casa de Abraão pode orientar sobre os próximos passos.</p>
+        <a class="button button-dark" href="#contato">Falar com a Casa <span>→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contato">
+    <div class="footer-brand">
+      <div class="brand-lockup">
+        <div class="brand-mark">C<span>A</span></div>
+        <div class="brand-name">Casa de<br>Abraão</div>
+      </div>
+      <p>Acolhendo pessoas.<br>Construindo possibilidades.<br>Transformando histórias.</p>
     </div>
-			
-	</header>
-	<main>
-		    <div class="primeiro_bloco"> 
-		   <div class="descrição_inicial"> <h2> Somos a Associação Casa de Abraão, uma instituição sem fins lucrativos fundada com o firme propósito de promover o acolhimento, tratamento e reinserção social de pessoas que enfrentam a dependência de álcool e outras drogas. <br> <br> Localizada no município de Eusébio, no Ceará, nossa missão baseia-se em um modelo de cuidado humanizado e restaurador. Atuamos sob o pilar de um "tripé" fundamental: Corpo, Mente e Espírito. <br> <br> Garantindo que os acolhidos redescubram a sua dignidade e se tornem verdadeiros protagonistas de uma nova história de vida.</h2> </div>
-			
-           <div class="imagem_banner">  <img src="./assets/banner.jpg" alt="banner">  </div>
 
-		   </div>
+    <nav class="footer-nav" aria-label="Navegação do rodapé">
+      <h3>Navegação</h3>
+      <a href="#">Início</a>
+      <a href="#quem-somos">Quem somos</a>
+      <a href="#projetos">O que fazemos</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#como-ajudar">Como ajudar</a>
+      <a href="#contato">Contato</a>
+    </nav>
 
-
-		   <div class="segundo_bloco"> 
-			 <h3> Problemas com Álcool e outras drogas? Podemos te ajudar.</h3>
-
-			 <div class="container-links" id="ancora">
-            <a href="https://api.whatsapp.com/send?phone=5585986213258&text=Ol%C3%A1,%20Gostaria%20de%20saber%20sobre%20atendimentos%20psicol%C3%B3gico." class="btn-link" target="_blank">
-              Doe ou Seja Voluntário
-            </a>
-
-            <a href="https://api.whatsapp.com/send?phone=5585986213258&text=Ol%C3%A1,%20Gostaria%20de%20saber%20sobre%20acolhimento!" class="btn-link" target="_blank">
-             Informações sobre Tratamento </a>
-
-           <a href="https://api.whatsapp.com/send?phone=5585986213258&text=Ol%C3%A1,%20Gostaria%20de%20saber%20sobre%20atendimentos%20psicol%C3%B3gico." class="btn-link" target="_blank">
-             Atendimento Psicológico </a>
-
-           <a href="https://api.whatsapp.com/send?phone=5585986213258&text=Ol%C3%A1,%20Gostaria%20de%20saber%20sobre%20atendimentos%20psicol%C3%B3gico." class="btn-link" target="_blank">
-           Contrate nossa palestra - Dependências e saúde mental
-           </a>
-                 <!-- obd: acho que alguns desses link tem que ser atualizado, ent tinha que falar com karen pq a doção vai pro wpp de atendimento pscicologico, ah e peguei esse link do linktre do instagram-->
-		</div>
-
-
-		   </div>
-		   <div class="wave-container2">
-        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M0,0 C150,90 350,-40 500,40 C650,120 900,10 1200,40 L1200,120 L0,120 Z"></path>
-        </svg>
-    </div>
-          
-
-
-
-
-
-
-
-
-
-	    <div class="terceiro_bloco">
-            <br>
-            <br>
-          <h1> Conheça um pouco da nossa estrutura:</h1>
-		  
-
-		  <!-- agora a ideia acqui poderia colocar algumas talvez um hero slide com fotos da asossicição mostrando a estrturas e tal -->
-		   <!-- pros proximo blocos ta pra pensar em colocar a foto   dos diretores da aossociaçaõ, em outro bloco os numeros alcançados tipo quantos pesso já ajudou, quantos abrigam e tal. aí pode se pensar em colocarlcar o relatos, e depois os contato pra rede social em formato de botões, aperta e vai pro insta, aperta e vai pro facebook-->
-			<!-- tbm penso em colocar um iframe em algum lugar do site , como esse relato aqui: https://www.facebook.com/casade.abraao/videos/junho-branco-m%C3%AAs-de-conscientiza%C3%A7%C3%A3o-e-preven%C3%A7%C3%A3o-do-uso-de-drogasesse-%C3%A9-o-reginal/194949559718097/ obs: obiviamente tinha pedir autorização pra por esse relato em video e tal-->
-			 <!-- ou pode ser esse: https://www.youtube.com/watch?v=kG72VlZuDlA  -->
-
-                <div class="carrossel-container">
-  
-  <input type="radio" name="slider" id="slide1" checked>
-  <input type="radio" name="slider" id="slide2">
-  <input type="radio" name="slider" id="slide3">
-  <input type="radio" name="slider" id="slide4">
-  <input type="radio" name="slider" id="slide5">
-
-  
-  <div class="slides">
-
-    <!-- SLIDE 1 -->
-    <div class="slide slide-1">
-      
-      <!-- Setas do Slide 1 (Anterior vai pro 5, Próxima vai pro 2) -->
-      <div class="setas">
-        <label for="slide5" class="seta anterior">&#10094;</label>
-        <label for="slide2" class="seta proxima">&#10095;</label>
+    <div class="footer-contact">
+      <h3>Contato</h3>
+      <a href="tel:+5585988213298">♧ &nbsp; (85) 9.8821.3298</a>
+      <a href="mailto:casa.de.abraao@gmail.com">✉ &nbsp; casa.de.abraao@gmail.com</a>
+      <p>⌖ &nbsp; Ceará</p>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram">◎</a>
+        <a href="#" aria-label="Facebook">f</a>
       </div>
     </div>
-
-    <!-- SLIDE 2 -->
-    <div class="slide slide-2">
-      
-      <!-- Setas do Slide 2 -->
-      <div class="setas">
-        <label for="slide1" class="seta anterior">&#10094;</label>
-        <label for="slide3" class="seta proxima">&#10095;</label>
-      </div>
-    </div>
-
-    <!-- SLIDE 3 -->
-    <div class="slide slide-3">
-      
-      <!-- Setas do Slide 3 -->
-      <div class="setas">
-        <label for="slide2" class="seta anterior">&#10094;</label>
-        <label for="slide4" class="seta proxima">&#10095;</label>
-      </div>
-    </div>
-
-    <!-- SLIDE 4 -->
-    <div class="slide slide-4">
-      
-      <!-- Setas do Slide 4 -->
-      <div class="setas">
-        <label for="slide3" class="seta anterior">&#10094;</label>
-        <label for="slide5" class="seta proxima">&#10095;</label>
-      </div>
-    </div>
-
-    <!-- SLIDE 5 -->
-    <div class="slide slide-5">
-      
-      <!-- Setas do Slide 5 -->
-      <div class="setas">
-        <label for="slide4" class="seta anterior">&#10094;</label>
-        <label for="slide1" class="seta proxima">&#10095;</label>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Bolinhas de Navegação (Paginação) -->
-  <div class="bolinhas">
-    <label for="slide1" class="bolinha b1"></label>
-    <label for="slide2" class="bolinha b2"></label>
-    <label for="slide3" class="bolinha b3"></label>
-    <label for="slide4" class="bolinha b4"></label>
-    <label for="slide5" class="bolinha b5"></label>
-  </div>
-</div>
-        <div class="info_contato">  
-        <h1 id="titulo_contato"> Informações de Contato e Funcionamento:</h1>
-        <p><strong> Telefone / WhatsApp:</strong> +55 85 98621-3258</p>
-        <p><strong>Endereço:</strong> Rua Canto do Oiti, 133 - Timbu, Eusébio - CE, CEP: 61776-840</p>
-        <p><strong>Horário de Atendimento Administrativo:</strong> De segunda a sexta-feira, das 8h às 16h (fechado aos sábados e domingos).</p>
-        <p><strong>Redes Sociais:</strong> Você pode acompanhar as atividades do projeto e entrar em contato direto através do <a href="https://www.instagram.com/casadeabraao/">Instagram oficial </a> (@casadeabraao) ou pela página da Casa de Abraão no <a href="https://www.facebook.com/casade.abraao/">Facebook</a>.</p>
-            </div>
-
-            <section class="secao-mapa">
-    <h3>Nossa Localização:</h3>
-    <div class="mapa-container">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.018789392284!2d-38.4485!3d-3.8825!2m3!1f0!2f20!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7456566e7897%3A0x15e58e2b18da7517!2sCasa%20de%20Abra%C3%A3o!5e0!3m2!1wpt-BR!2sbr!4v1700000000000!5m2!1wpt-BR!2sbr" 
-            width="100%" 
-            height="350" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </div>
-</section>
-        
-           
-        <div class="wave-container3">
-        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M0,0 C150,90 350,-40 500,40 C650,120 900,10 1200,40 L1200,120 L0,120 Z"></path>
-        </svg>
-    </div>
-
-		</div>
-
-
-        <div class="quarto_bloco">
-
-          
-            
-
-          <div class="fotos_responsaveis"> 
-           
-          <div class="espaço_1"> 
-          <figure>  <img src="./assets/banner.jpg">  </figure>
-          <h2>José Milton </h2>
-          <h3> Presidente </h3>
-             </div>
-                    <!-- ESSAS FOTOS SÃO TEMPORARIAS, dps pedir pra eles as fotos pra colcoar-->
-          <div class="espaço_2"> 
-          <figure>  <img src="./assets/banner.jpg"> </figure>
-          <h2>Karem Cavalcanti </h2>
-          <h3>Coordenadora e Gestora </h3>
-            </div>
-           
-        </div>
-             <br> <br> <br> <br> 
-
-        
-        </div>
-
-        <div class="quinto_bloco"> 
-        
-
-        <div class="texto_quinto_bloco"> 
-        <h1>Conheça Nosso Trabalho: </h1>
-
-
-        <P>Atualmente, nossa comunidade acolhe e acompanha dezenas de homens em vulnerabilidade, oferecendo atenção integral, moradia temporária, assistência psicossocial e atividades de laborterapia e profissionalização.<br><br>
-             Nosso trabalho, que já conta com mais de 14 anos de história, mantém-se vivo graças a uma rede solidária de voluntários, parcerias institucionais e vagas gratuitas custeadas por apoio governamental.<br><br>
-              Buscamos construir um ambiente seguro, livre de julgamentos, focado na empatia, no acolhimento familiar e no respeito mútuo, quebrando os estigmas que cercam a dependência química. </P>
-            </div>
-        <section class="secao-video">
-    <h2> Relato de um Acolhido: </h2>
-    
-       <div class="video-container">
-         <iframe 
-            src="https://www.youtube.com/embed/Yyx93NrMwzs" 
-            title="Vídeo Casa de Abraão" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
-        </iframe>
-        </div>
-      </section>
-      <!-- se vidoe n funcionar, tiver aparecendo um erro 153, é pq ta rodando o site no local do pc, se roda no live server, pela exetensão deve da certo, assim como quando bota pra valer em servidor-->
-    
-
-        </div>
-
-        <div class="sexto_bloco">
-        <P> Foi movida pelo ideal de estender a mão a quem mais precisa e de não fechar os olhos para a dor da dependência que a Casa de Abraão foi criada no distrito de Timbu. A organização trabalha incansavelmente para salvar vidas, orientar e dar suporte emocional às famílias afetadas, diminuir o preconceito social e promover uma real transformação social através do amor e da espiritualidade.
-            </P>  <br> <br>  
-             
-              
-<a href="#" data-target="#ancora" class="botao-ancora">Apoiar esta Causa</a>
-
-<script>
-  
-  if (history.scrollRestoration) {
-    history.scrollRestoration = 'manual';
-  }
-
-  
-  document.querySelectorAll('a[data-target]').forEach(botao => {
-    botao.addEventListener('click', function(evento) {
-      evento.preventDefault(); 
-      
-      const idDestino = this.getAttribute('data-target');
-      const elementoDestino = document.querySelector(idDestino);
-      
-      if (elementoDestino) {
-       
-        const topoElemento = elementoDestino.getBoundingClientRect().top + window.scrollY;
-        
-        
-        const recuoTopo = 100; 
-
-        window.scrollTo({
-          top: topoElemento - recuoTopo,
-          behavior: 'smooth'
-        });
-      }
-    });
-  });
-
-</script>
-
-
-            <div class="wave-container4">
-        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M0,0 C150,90 350,-40 500,40 C650,120 900,10 1200,40 L1200,120 L0,120 Z"></path>
-        </svg>
-    </div>
-
-		
-       
-
-
-		  
-           
-
-	</main>
-	<footer>
-		<p> &copy todos os diretos reservados. Associação Casa de Abraão / CNPJ: 11.071.022/0001-69 </p>
-		<!-- t -->
-	</footer>
+  </footer>
 </body>
 </html>
